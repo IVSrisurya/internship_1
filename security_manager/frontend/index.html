@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>security_manager</title>
+</head>
+<body>
+<div id="app">
+    <img id="logo" class="logo">
+    <div class="result" id="result">Please enter your name below 👇</div>
+    <div class="input-box" id="input">
+        <input class="input" id="name" type="text" autocomplete="off" />
+        <button class="btn" onclick="greet()">Greet</button>
+    </div>
+    
+    <div class="input-box" id="input">
+        <button class="btn" onclick="disableWindowsUpdates()">Disable Windows Updates</button>
+    </div>
+    <div class="input-box" id="input">
+        <button class="btn" onclick="disableCommandPrompt()">Disable Command Prompt</button>
+    </div>
+    <div class="input-box" id="input">
+        <button class="btn" onclick="disableFileDownloads()">Disable File Downloads</button>
+    </div>
+    <div class="input-box" id="input">
+        <input class="input" id="websiteInput" type="text" placeholder="Enter website" />
+        <button class="btn" onclick="blockWebsite()">Block Website</button>
+    </div>
+    <div class="input-box" id="input">
+        <input class="input" id="timeoutInput" type="number" placeholder="Enter timeout" />
+        <button class="btn" onclick="setLockScreenTimeout()">Set Lock Screen Timeout</button>
+    </div>
+
+</div>
+<script src="./src/main.js" type="module"></script>
+</body>
+</html>
